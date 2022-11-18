@@ -248,6 +248,3 @@
 // }
 
 // 5.2
-for (let i; ; i--) {
-  console.log();
-}
