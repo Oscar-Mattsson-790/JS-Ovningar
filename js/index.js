@@ -248,3 +248,439 @@
 // }
 
 // 5.2
+// for (let count = 100; count >= 0; count--) {
+//   console.log(count);
+// }
+
+// 5.3
+// let fruits = ["apple", "orange", "pear", "kiwi", "pineapple"];
+// Alternativ 1
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
+// Alternativ 2
+// for (let i of fruits) {
+//   console.log(i);
+// }
+// Alternativ 3
+// fruits.forEach((element) => console.log(element));
+
+// 5.4
+// Alternativ 1
+// fruits.forEach((fruit, index, array) => {
+//   console.log(`${index}. ${fruit}`);
+// });
+// Alternativ 2
+// for (let fruit of fruits.entries()) {
+//   console.log(`${fruit[0]}. ${fruit[1]}`);
+// }
+
+// 5.5
+// const suites = ["Hjärter", "Spader", "Ruter", "Klöver"];
+// let kortlek = [];
+
+// for (let i = 2; i <= 14; i++) {
+//   for (let suite = 0; suite <= 3; suite++) {
+//     if (i === 11) {
+//       kortlek.push(`${suites[suite]} Knekt`);
+//     }
+//     if (i === 12) {
+//       kortlek.push(`${suites[suite]} Dam`);
+//     }
+//     if (i === 13) {
+//       kortlek.push(`${suites[suite]} Kung`);
+//     }
+//     if (i === 14) {
+//       kortlek.push(`${suites[suite]} Ess`);
+//     }
+//     if (i < 11) {
+//       kortlek.push(`${suites[suite]} ${i}`);
+//     }
+//   }
+// }
+// console.log(kortlek);
+
+// 6. Objects
+// 6.1
+// const book = {
+//   title: "Life of a programmer",
+//   author: "Gabriel Fox",
+//   genres: ["Tech", "Thriller"],
+// };
+// console.log(book);
+
+// 6.2
+// let person = {
+//   name: "Sixten Faceplant",
+//   email: "sixten.faceplant@zocom.se",
+//   role: "ninjah",
+//   adress: {
+//     street: "Karatevägen 3",
+//     zip: "41477",
+//     city: "Kablam City",
+//   },
+// };
+// console.log(person.adress.city);
+
+// 6.3
+// const person = {
+//   name: "Sixten Faceplant",
+//   email: "sixten.faceplant@zocom.se",
+//   role: "ninjah",
+//   adress: {
+//     street: "Karatevägen 3",
+//     zip: "41477",
+//     city: "Kablam City",
+//   },
+// };
+// const clonePerson = { ...person };
+// const person2 = person;
+
+// 6.4
+// const dog = {
+//   name: "Harry",
+//   breed: "chicuaua",
+//   bark: function () {
+//     return `Woff, jag heter ${this.name}! `;
+//   },
+// };
+// console.log(dog.bark());
+
+// 6.5
+// let person = {
+//   name: "sixten",
+//   email: "sixten@zocom.se",
+//   role: "ninjah",
+//   age: 32,
+// };
+
+// for (const key in person) {
+//   if (person.hasOwnProperty(key)) {
+//     console.log(`${key}: ${person[key]}`);
+//   }
+// }
+
+// 7. Function
+// 7.1
+// function sum(x, y) {
+//   return x + y;
+// }
+// console.log(sum(2, 2));
+
+// 7.3
+// const str = "2019-10-14";
+
+// function getYear() {
+//   return str.substring(0, 4); // startindex, endindex
+// }
+// console.log(getYear());
+
+// 7.4
+
+// INTE LÖST ÄNNU
+
+// 8. Conditionals
+// 8.1
+// function compareThis(a, b) {
+//   if (a === b) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(compareThis(1, 1));
+// console.log(compareThis(3, 1));
+
+// // 8.2
+// function between(number) {
+//   if (number >= 20 && number < 40) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(between(30));
+// console.log(between(50));
+
+// 8.3
+
+// INTE LÖST ÄNNU
+// function getMeTheLongestArr(a, b) {
+//   // return a.join() == b.join();
+//   if (a.length === b.length) {
+//     return true;
+//   } else {
+//     false;
+//   }
+// }
+// console.log(getMeTheLongestArr([1, 2], ["A", "B", "C"]));
+
+// 9. Math object
+// 9.1
+// function random(max) {
+//   return Math.floor(Math.random() * max);
+// }
+// console.log(random(10000));
+
+// 9.2
+
+// INTE LÖST ÄNNU
+
+// function randomPassword(n) {
+//   return Math.floor(Math.random() * n).toString();
+// }
+
+// console.log(randomPassword(7));
+
+// 9.3
+// const names = ["sixten", "Eva", "Ali", "Kim", "Greger", "Alicia"];
+// function randomName(names) {
+//   const randomIndex = Math.floor(Math.random() * names.length);
+//   // const item = names[randomIndex];
+//   // return item;
+//   return names[randomIndex];
+// }
+// console.log(randomName(names));
+
+// 10. Program flow
+// 10.1
+// let getData = function (url) {}; // Function Expression
+// function getData() {} // Function Declaration
+
+// 10.2
+// HelloAgainAgain();
+
+// function hello() { // TREDJE
+//   console.log("Hello!");
+// }
+
+// function helloAgain() { // ANDRA
+//   console.log("Hello Again!");
+//   hello();
+// }
+
+// function HelloAgainAgain() { // FÖRST
+//   console.log("Hello Again Again!");
+//   helloAgain();
+// }
+
+// 10.3
+// let pokemons = ["Pikachu", "Charmander", "Bulbasaur", "Squirtle"];
+
+// function printPokemons() {
+//   for (let i = 0; i < pokemons.length; i++) {
+//     console.log("One awesome pokemon is " + pokemons[i]);
+//   }
+// }
+// printPokemons();
+
+// 10.4
+// function reverseString(str) {
+//   let newString = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     newString += str[i];
+//   }
+//   return newString;
+// }
+// console.log(reverseString("hello"));
+
+// 11. Async / promises
+// 11.1
+// pending
+// fulfilled
+// rejected
+
+// 11.2
+// let getData = new Promise((resolve, reject) => {
+//   let data = 0;
+//   if (data == 0) {
+//     resolve("Success");
+//   } else {
+//     reject("Failed");
+//   }
+// });
+
+// getData
+//   .then((message) => {
+//     console.log("This is in the then " + message);
+//   })
+//   .catch((message) => {
+//     console.log("This is in the catch " + message);
+//   });
+
+// 11.3
+// function getData() {
+//   const getData = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("logga url");
+//     }, 1000);
+//   });
+//   return getData;
+// }
+
+// async function getData2() {
+//   const url = await getData();
+//   console.log(url);
+// }
+// getData2();
+
+// const getData = async () => {
+//   const response = await fetch("https://api.chucknorris.io/jokes/random");
+//   const data = await response.json();
+
+//   return data;
+// };
+
+// getData().then((data) => console.log("resolved:", data));
+
+// 12. API interaction fetch
+// const url = `https://api.chucknorris.io/jokes/random`;
+// function chuchMe(url) {
+//   fetch(url)
+//     .then((response) => {
+//       console.log("Det är inte lätt när man är en kotlett :)", response);
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//     })
+//     .catch((err) => {
+//       console.log("rejected", err);
+//     });
+// }
+// console.log(chuchMe());
+
+// fetch(url)
+//   .then((response) => {
+//     console.log("Det är inte lätt när man är en kotlett :)", response);
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log("rejected", err);
+//   });
+
+// 12.2
+// const url = `https://jsonplaceholder.typicode.com/posts`;
+
+// let data = {
+//   id: 1,
+//   joke: "How many ears does Spock have? - Three; Left, right and the final front ear.",
+//   funny: true,
+// };
+
+// 12.3
+
+////////////////////
+
+// DOM manipulation
+
+// 1. Single selector
+//1.1
+// const h2Elem = document.querySelector("h2").innerHTML;
+// console.log(h2Elem);
+
+// 1.2
+// const ulElem = document.querySelector("ul").childNodes[5].innerText;
+// console.log(ulElem);
+
+// 2. Select All (node list)
+// 2.1
+// const ulElem = (document.querySelector("ul").style.textTransform = "upperCase");
+
+// 3. Value from input
+// 3.1
+// const inputElem = document.querySelector("input").value;
+// console.log(inputElem);
+
+// 3.2
+// const selectElem = document.querySelector("select").value;
+// console.log(selectElem);
+
+// 4. Attributes
+// 4.1
+// const imgElem = document.querySelector("img").src;
+// console.log(imgElem);
+
+// 4.2
+// const inputBoxElem = document.querySelector("input").checked;
+// console.log(inputBoxElem);
+
+// 5. CSS
+// 5.1
+// const getNavElem = document.querySelector("nav");
+// getNavElem.className = ".show";
+// // const nav = document.createAttribute("class");
+// // nav.value = ".show";
+// // getNavElem.setAttributeNode(nav);
+// console.log(getNavElem);
+
+// 5.2
+// const aElem = document.querySelector("#home");
+// aElem.classList.toggle(".active");
+// console.log(aElem);
+
+// // 5.3
+// const figureElem = document.querySelector("figure").childNodes;
+
+// figureElem.forEach((node, index) => {
+//   if (index === 1 || index === 3 || index === 5) {
+//     node.className = ".shadow";
+//   }
+// });
+// console.log(figureElem);
+
+// 6. Create contet
+// 6.1
+// const newH1 = document.createElement("h1");
+// newH1.innerHTML = "Jag är en rubrik!";
+// document.body.append(newH1);
+// console.log(newH1);
+
+// 6.2
+// const url = `https://api.chucknorris.io/jokes/random`;
+
+// // async function getURL(url) {
+// //   const response = await fetch(url);
+// //   let data = await response.json();
+// //   console.log(data);
+// // }
+// // getURL(url);
+
+// const getURL = fetch(url)
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
+
+// console.log(getURL);
+
+// const wrapper = document.createElement("section");
+// const img = document.createElement("img");
+// const h2 = document.createElement("h2");
+// const a = document.createElement("a");
+// img.innerHTML = "icon_url";
+// h2.innerHTML = "value";
+// a.innerHTML = "url";
+// wrapper.append(img, h2, a);
+// document.body.append(wrapper);
+// console.log(wrapper);
+
+// 7. Events
+// 7.1
+// const btnElem = document.querySelector("button");
+// // btnElem.addEventListener("click", function () {
+// //   console.log("go go go");
+// // });
+// btnElem.addEventListener("click", () => {
+//   console.log("go go go");
+// });
+
+// 7.2
+const ulEvent = document.querySelector("#parent-list");
+
+ulEvent.addEventListener("click", function () {
+  console.log(`Jag älskar ${li.name}`);
+});
+
+console.log(ulEvent);
