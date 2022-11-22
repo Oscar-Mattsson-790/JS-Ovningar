@@ -376,8 +376,19 @@
 // console.log(getYear());
 
 // 7.4
-
-// INTE LÖST ÄNNU
+// function calcThis(number, number2, aritmetisk) {
+//   if (aritmetisk === "+") {
+//     return number + number2;
+//   } else if (aritmetisk === "-") {
+//     return number - number2;
+//   } else if (aritmetisk === "*") {
+//     return number * number2;
+//   } else if (aritmetisk === "/") {
+//     return number / number;
+//   }
+//   console.log(sum);
+// }
+// console.log(calcThis(1, 2, "+"));
 
 // 8. Conditionals
 // 8.1
@@ -403,14 +414,11 @@
 // console.log(between(50));
 
 // 8.3
-
-// INTE LÖST ÄNNU
 // function getMeTheLongestArr(a, b) {
-//   // return a.join() == b.join();
-//   if (a.length === b.length) {
-//     return true;
+//   if (a.length > b.length) {
+//     return a;
 //   } else {
-//     false;
+//     return b;
 //   }
 // }
 // console.log(getMeTheLongestArr([1, 2], ["A", "B", "C"]));
@@ -423,13 +431,17 @@
 // console.log(random(10000));
 
 // 9.2
-
-// INTE LÖST ÄNNU
-
 // function randomPassword(n) {
-//   return Math.floor(Math.random() * n).toString();
-// }
+//   let alphabet = "qwertyuiopasdfghjklzxcvbnm1234567890";
+//   let password = [];
 
+//   for (let i = 0; i < n; i++) {
+//     let randomNumber = Math.floor(Math.random() * 36);
+//     password.push(alphabet[randomNumber]);
+//   }
+//   // console.log("lösenordet: ", password);
+//   return password.join("");
+// }
 // console.log(randomPassword(7));
 
 // 9.3
@@ -676,11 +688,37 @@
 //   console.log("go go go");
 // });
 
-// 7.2
-const ulEvent = document.querySelector("#parent-list");
+// // 7.2
+// const liEvent = document.querySelector("#a");
 
-ulEvent.addEventListener("click", function () {
-  console.log(`Jag älskar ${li.name}`);
-});
+// liEvent.addEventListener("click", function () {
+//   console.log(`jag älskar ${liEvent.innerHTML}!!!!!`);
+// });
 
-console.log(ulEvent);
+// const liEvent2 = document.querySelector("#b");
+
+// liEvent2.addEventListener("click", function () {
+//   console.log(`jag älskar ${liEvent2.innerHTML}!!!!!`);
+// });
+
+// const liEvent3 = document.querySelector("#c");
+
+// liEvent3.addEventListener("click", function () {
+//   console.log(`jag älskar ${liEvent3.innerHTML}!!!!!`);
+// });
+
+// const liEvent4 = document.querySelector("#d");
+
+// liEvent4.addEventListener("click", function () {
+//   console.log(`jag älskar ${liEvent4.innerHTML}!!!!!`);
+// });
+
+// const liEvent5 = document.querySelector("#e");
+
+// liEvent5.addEventListener("click", function () {
+//   console.log(`jag älskar ${liEvent5.innerHTML}!!!!!`);
+// });
+
+// console.log(liEvent);
+
+// // 7.3
