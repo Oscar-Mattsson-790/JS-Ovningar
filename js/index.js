@@ -688,37 +688,37 @@
 //   console.log("go go go");
 // });
 
-// // 7.2
-// const liEvent = document.querySelector("#a");
+// 7.2
+const liEvent = document.querySelector("#a");
 
-// liEvent.addEventListener("click", function () {
-//   console.log(`jag älskar ${liEvent.innerHTML}!!!!!`);
-// });
+liEvent.addEventListener("click", function () {
+  alert(`jag älskar ${liEvent.innerHTML}!!!!!`);
+});
 
-// const liEvent2 = document.querySelector("#b");
+const liEvent2 = document.querySelector("#b");
 
-// liEvent2.addEventListener("click", function () {
-//   console.log(`jag älskar ${liEvent2.innerHTML}!!!!!`);
-// });
+liEvent2.addEventListener("click", function () {
+  alert(`jag älskar ${liEvent2.innerHTML}!!!!!`);
+});
 
-// const liEvent3 = document.querySelector("#c");
+const liEvent3 = document.querySelector("#c");
 
-// liEvent3.addEventListener("click", function () {
-//   console.log(`jag älskar ${liEvent3.innerHTML}!!!!!`);
-// });
+liEvent3.addEventListener("click", function () {
+  alert(`jag älskar ${liEvent3.innerHTML}!!!!!`);
+});
 
-// const liEvent4 = document.querySelector("#d");
+const liEvent4 = document.querySelector("#d");
 
-// liEvent4.addEventListener("click", function () {
-//   console.log(`jag älskar ${liEvent4.innerHTML}!!!!!`);
-// });
+liEvent4.addEventListener("click", function () {
+  alert(`jag älskar ${liEvent4.innerHTML}!!!!!`);
+});
 
-// const liEvent5 = document.querySelector("#e");
+const liEvent5 = document.querySelector("#e");
 
-// liEvent5.addEventListener("click", function () {
-//   console.log(`jag älskar ${liEvent5.innerHTML}!!!!!`);
-// });
+liEvent5.addEventListener("click", function () {
+  alert(`jag älskar ${liEvent5.innerHTML}!!!!!`);
+});
 
-// console.log(liEvent);
+console.log(liEvent);
 
 // // 7.3
